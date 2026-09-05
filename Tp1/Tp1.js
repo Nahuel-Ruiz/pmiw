@@ -14,6 +14,7 @@ let velocidad = 22;
 let posX = 400;
 let posY = 440;
 
+//Carga las imagenes
 function preload() {
   for (let i = 0; i < 8; i++) {
     BIT[i] = loadImage("./data/BIT" + nf(i, 4) + ".png");
@@ -71,6 +72,7 @@ function dibujarBIT(imagen, x, y) {
   image(imagen, x, y, 250, 250);
 }
 
+//Fondo
 function dibujarFondo() {
   imageMode(CORNER);
   image(imgFondo, 0, 0, width, height);
@@ -82,6 +84,7 @@ function dibujarFondo() {
   ellipse(posX, posY + 70, 110, 14);
 }
 
+//Informacion
 function mostrarInformacion() {
   stroke(255, 255, 255, 100);
   strokeWeight(1);
